@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak WhatsApp</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .card{
+            width: 350px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 25px;
+            padding: 35px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            animation: fadeIn 1s ease;
+        }
+
+        .logo{
+            width: 90px;
+            height: 90px;
+            background: white;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo i{
+            font-size: 45px;
+            color: #25D366;
+        }
+
+        h2{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 15px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        .number{
+            background: rgba(255,255,255,0.2);
+            padding: 12px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .wa-btn{
+            display: inline-block;
+            width: 100%;
+            padding: 14px;
+            background: white;
+            color: #25D366;
+            text-decoration: none;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .wa-btn i{
+            margin-right: 8px;
+        }
+
+        .wa-btn:hover{
+            transform: translateY(-3px);
+            background: #f1f1f1;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+        <h2>Hubungi Saya</h2>
+
+        <p>
+            Klik tombol di bawah untuk langsung chat WhatsApp
+        </p>
+
+        <div class="number">
+            0821-7332-0079
+        </div>
+
+        <a href="https://wa.me/6282173320079?text=Halo%20saya%20ingin%20bertanya"
+           target="_blank"
+           class="wa-btn">
+
+           <i class="fa-brands fa-whatsapp"></i>
+           Chat Sekarang
+        </a>
+    </div>
+
+</body>
+</html>

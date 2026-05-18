@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerjasama</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Kerjasama</a>
+    </div>
+    <div class="header">
+        Kerjasama
+    </div>
+    <div class="form-section">
+        <h1>Formulir Penawaran Kerjasama</h1>
+        <form onsubmit="return validasiForm()">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text"
+                    id="nama"
+                    placeholder="Masukkan nama"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea
+                    id="alamat"
+                    placeholder="Masukkan alamat"
+                    required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>No. WA</td>
+                <td>
+                    <input type="text"
+                    id="wa"
+                    pattern="[0-9]{10,13}"
+                    placeholder="08xxxxxxxxxx"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email"
+                    id="email"
+                    placeholder="Masukkan email"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio"
+                            name="jk"
+                            required>
+                            Laki-Laki
+                        </label>
+                        <label>
+                            <input type="radio"
+                            name="jk">
+                            Perempuan
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Bidang Kerjasama</td>
+                <td>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox">
+                            Multimedia
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Web Dev
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            Fintech
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>File Penawaran</td>
+                <td>
+                    <input type="file" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Pelaksanaan</td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Domisili</td>
+                <td>
+                    <select required>
+                        <option value="">
+                            --Pilih Domisili--
+                        </option>
+                        <option>Jakarta</option>
+                        <option>Yogyakarta</option>
+                        <option>Bandung</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+        </form>
+    </div>
+    
+    <div class="footer">
+        25.12.3661 | Dwi Yoga Zulfan Anggara
+    </div>
+</div>
+<script>
+function validasiForm(){
+    let nama = document.getElementById("nama").value;
+    let wa = document.getElementById("wa").value;
+    if(nama.length < 3){
+        alert("Nama minimal 3 karakter!");
+        return false;
+    }
+    if(isNaN(wa)){
+        alert("Nomor WA harus berupa angka!");
+        return false;
+    }
+    alert("Form berhasil dikirim!");
+    return true;
+}
+</script>
+</body>
+</html>
