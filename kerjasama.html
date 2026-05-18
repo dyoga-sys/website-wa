@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerjasama</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="#">
 </head>
 <body>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:linear-gradient(to right, #eef2ff, #f8fafc);
+    padding:20px;
+}
+.container{
+    width:950px;
+    margin:auto;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+.navbar{
+    background:#111827;
+    padding:18px 30px;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-right:25px;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+.navbar a:hover{
+    color:#60a5fa;
+}
+.header{
+    background:linear-gradient(135deg, #2563eb, #1d4ed8);
+    color:white;
+    text-align:center;
+    padding:50px;
+    font-size:38px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+.form-section{
+    padding:40px 60px;
+}
+.form-section h1{
+    text-align:center;
+    margin-bottom:35px;
+    color:#1e293b;
+    font-size:32px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:12px;
+}
+td{
+    border:1px solid #d1d5db;
+    padding:15px;
+    font-size:15px;
+}
+td:first-child{
+    width:30%;
+    background:#f8fafc;
+    font-weight:600;
+    color:#334155;
+}
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+    font-size:14px;
+}
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,0.2);
+}
+textarea{
+    resize:none;
+    height:90px;
+}
+.radio-group,
+.checkbox-group{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+.radio-group label,
+.checkbox-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#374151;
+    font-size:14px;
+}
+.button-group{
+    text-align:center;
+    margin-top:30px;
+}
+button{
+    padding:12px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin:0 10px;
+    transition:0.3s;
+}
+button:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+.footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:20px;
+    font-weight:bold;
+}
+    </style>
 <div class="container">
     <div class="navbar">
         <a href="index.html">Home</a>
